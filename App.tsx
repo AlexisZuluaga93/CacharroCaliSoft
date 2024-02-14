@@ -1,5 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View,Image, TextInput } from 'react-native';
+import { RoundedButton } from './src/components/RoundedButton';
+import { MyColors } from './src/theme/AppTheme';
 
 export default function App() {
   return (
@@ -41,7 +43,7 @@ export default function App() {
                 secureTextEntry={true}
               />
             </View>
-            
+            <RoundedButton text='ENTRAR'/>
         </View>
     </View>
     
@@ -86,7 +88,8 @@ const styles = StyleSheet.create({
   },
   formTxt:{
     fontWeight:"bold",
-    fontSize:16
+    fontSize:16,
+    color:MyColors.fontColor
 
   },
   txtInput:{
@@ -102,7 +105,8 @@ const styles = StyleSheet.create({
   imgInput:{
     height:25,
     width:25,
-    marginTop:5
+    marginTop:5,
+    
     
     
     
